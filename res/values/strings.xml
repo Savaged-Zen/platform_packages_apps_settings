@@ -1137,7 +1137,7 @@
     <string name="sync_settings">Accounts &amp; sync</string>
     <!-- Main Settings screen setting option summary text for the itme to go into the screen with data sync settings-->
     <string name="sync_settings_summary">Add or remove accounts and change account settings</string>
-
+    <string name="szparts_settings">Savaged-Zen Settings</string>
     <!-- Main Settings screen, setting option name to go into search settings -->
     <string name="search_settings">Search</string>
     <!-- Main Settings screen, setting option summary to go into search settings -->
@@ -1229,7 +1229,8 @@
     <string name="kernel_version">Kernel version</string>
     <!-- About phone screen,  setting option name-->
     <string name="build_number">Build number</string>
-
+    <!-- About phone screen,  Savaged-Zem rom version.-->
+    <string name="rom_version">Rom Version</string>
     <!-- About phone screen, show when a value of some status item is unavailable. -->
     <string name="device_info_not_available">Not available</string>
     <!-- About phone screen, phone status screen title -->
@@ -2647,4 +2648,27 @@ found in the list of installed applications.</string>
     <string name="sound_category_calls_title">Incoming calls</string>
     <string name="sound_category_notification_title">Notifications</string>
     <string name="sound_category_feedback_title">Feedback</string>
+
+<!-- Extended device info -->
+
+    <string name="ext_rom_device_info">Rom &amp; Device Info</string>
+    
+    <string name="title_ext_device_name">Device codename</string>
+    <string name="title_ext_rom_version">Rom version</string>
+
+
+    <string name="ext_partition_info">Partition Info</string>
+    <string name="extendedinfo_settings">Extended Info</string>
+    <string name="extended_info_title">Extended Info</string>
+    <string name="title_system_part_info">/system partition info</string>
+    <string name="title_data_part_info">/data partition info</string>
+    <string name="title_cache_part_info">/cache partition info</string>
+    <string name="title_sdcard_fat_part_info">/sdcard partition info (fat)</string>
+    <string name="title_sdcard_ext_part_info">/sdcard partition info (ext)</string>
+
+
+    <string name="used_out_of">used out of</string>
+    <string name="default_unavailable">Unavailable</string>
+    <string name="default_unimplemented">Not fully implemented yet.</string>
+
 </resources>
