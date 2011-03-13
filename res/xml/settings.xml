@@ -20,6 +20,16 @@
     android:title="@string/settings_label"
     android:key="parent">
 
+        <!-- SZ Specific Settings -->
+        <com.android.settings.IconPreferenceScreen
+            settings:icon="@drawable/ic_savagedzen"
+            android:title="@string/sz_settings_title">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.savagedzen.szparts"
+                android:targetClass="com.savagedzen.szparts.activities.MainActivity" />
+        </com.android.settings.IconPreferenceScreen>
+
         <com.android.settings.IconPreferenceScreen
             android:title="@string/radio_controls_title"
             settings:icon="@drawable/ic_settings_wireless">
@@ -37,16 +47,6 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.phone"
                 android:targetClass="com.android.phone.CallFeaturesSetting" />
-        </com.android.settings.IconPreferenceScreen>
-
-	<!-- SZ Specific Settings -->
-        <com.android.settings.IconPreferenceScreen
-            settings:icon="@drawable/ic_savagedzen"
-            android:title="@string/sz_settings_title">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.savagedzen.szparts"
-                android:targetClass="com.savagedzen.szparts.activities.MainActivity" />
         </com.android.settings.IconPreferenceScreen>
 
         <!-- Sound -->
