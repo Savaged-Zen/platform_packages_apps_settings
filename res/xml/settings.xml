@@ -39,6 +39,16 @@
                 android:targetClass="com.android.phone.CallFeaturesSetting" />
         </com.android.settings.IconPreferenceScreen>
 
+	<!-- SZ Specific Settings -->
+        <com.android.settings.IconPreferenceScreen
+            settings:icon="@drawable/ic_savagedzen"
+            android:title="@string/sz_settings_title">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.savagedzen.szparts"
+                android:targetClass="com.savagedzen.szparts.activities.MainActivity" />
+        </com.android.settings.IconPreferenceScreen>
+
         <!-- Sound -->
 
         <com.android.settings.IconPreferenceScreen

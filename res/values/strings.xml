@@ -1487,8 +1487,13 @@
     <string name="media_format_gesture_explanation" product="default">You must draw your unlock pattern to confirm that you want to erase the SD card.</string>
 
     <!-- Main settings screen, Call settings title for item to go into the call settings -->
-    <string name="call_settings_title">Call settings</string>
+    <string name="call_settings_title">Savaged-Zen settings</string>
     <!-- Main settings screen, Call settings summary for item to go into call settings -->
+    <string name="call_settings_summary">Extra Savaged-Zen specific settings</string>
+
+    <!-- Main settings screen, Savaged-Zen extra settings title for item to go into the call settings -->
+    <string name="sz_settings_title">Call settings</string>
+    <!-- Main settings screen, Savaged-Zen extra settings summary for item to go into call settings -->
     <string name="call_settings_summary">Set up voicemail, call forwarding, call waiting, caller ID</string>
 
     <!-- Tethering controls, item title to go into the tethering settings -->
