@@ -25,12 +25,12 @@
                 android:summary="@string/wimax_quick_toggle_summary"
                 android:persistent="false" />
 
-    </PreferenceCategory>
+        <Preference
+                android:key="wimax_scan"
+                android:dependency="wimax_enabled"
+                android:title="@string/scan_for_wimax"
+                android:persistent="false" />        
 
-    <com.android.settings.ProgressCategory
-            android:key="wimax_networks"
-            android:dependency="wimax_enabled"
-            android:title="@string/wimax_networks"
-            android:persistent="false" />
+    </PreferenceCategory>
 
 </PreferenceScreen>

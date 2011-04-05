@@ -1050,6 +1050,8 @@
     <string name="wimax_settings_category">WiMAX settings</string>
     <!-- Used in the 2nd-level settings screen to turn on Wimax -->
     <string name="wimax">WiMAX</string>
+    <!--  Used in the 2nd-level settings screen to scan for Wimax -->
+    <string name="scan_for_wimax">Scan for WiMAX</string>
     <!--Wimax settings screen menu option -->
     <string name="scan_wimax">Scan</string>
     <!--Wimax settings screen menu option -->

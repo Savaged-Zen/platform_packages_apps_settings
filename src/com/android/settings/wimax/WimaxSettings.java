@@ -58,6 +58,7 @@ public class WimaxSettings extends PreferenceActivity { // implements WimaxLayer
 
     private static final String KEY_WIMAX_ENABLED = "wimax_enabled";
     private static final String KEY_WIMAX_NETWORKS = "wimax_networks";
+    private static final String KEY_WIMAX_SCAN = "wimax_scan";
 
     private ProgressCategory mNetworksCategory;
     private CheckBoxPreference mWimaxEnabled;
@@ -242,6 +243,19 @@ public class WimaxSettings extends PreferenceActivity { // implements WimaxLayer
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+
+        if (KEY_WIMAX_SCAN.equals(preference.getKey())) {
+            //WiMAX scanning code as provided for the Scan button under the OptionsMenu
+            try {
+                Method wimaxRescan = mWimaxController.getClass().getMethod("wimaxRescan");
+                if (wimaxRescan != null) {
+                    wimaxRescan.invoke(mWimaxController);
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Unable to perform WiMAX rescan!", e);
+            }
+        }
+
         super.onPreferenceTreeClick(preferenceScreen, preference);
 
         return false;
