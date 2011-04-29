@@ -49,6 +49,7 @@ public class DeviceInfoSettings extends PreferenceActivity {
     private static final String KEY_LICENSE = "license";
     private static final String KEY_COPYRIGHT = "copyright";
     private static final String PROPERTY_URL_SAFETYLEGAL = "ro.url.safetylegal";
+    private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
 
     long[] mHits = new long[3];
 
@@ -102,6 +103,14 @@ public class DeviceInfoSettings extends PreferenceActivity {
         parentPreference = getPreferenceScreen();
         Utils.updatePreferenceToSpecificActivityOrRemove(this, parentPreference, KEY_CONTRIBUTORS,
                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
+
+        // Read platform settings for additional system update setting
+        boolean mUpdateSettingAvailable =
+                getResources().getBoolean(R.bool.config_additional_system_update_setting_enable);
+
+        if(mUpdateSettingAvailable == false) {
+            getPreferenceScreen().removePreference(findPreference(KEY_UPDATE_SETTING));
+        }
     }
 
     @Override
