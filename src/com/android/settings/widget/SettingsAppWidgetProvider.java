@@ -709,9 +709,6 @@ public class SettingsAppWidgetProvider extends AppWidgetProvider {
             sWifiState.onActualStateChange(context, intent);
         } else if (BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)) {
             sBluetoothState.onActualStateChange(context, intent);
-        } else if (WimaxManagerConstants.WIMAX_ENABLED_CHANGED_ACTION.equals(intent.getAction())) {
-            logD("Received WiMAX change request");
-            WimaxButton.getInstance().onReceive(context, intent);
         } else if (LocationManager.PROVIDERS_CHANGED_ACTION.equals(action)) {
             sGpsState.onActualStateChange(context, intent);
         } else if (SyncStorageEngine.SYNC_CONNECTION_SETTING_CHANGED_INTENT.getAction()
