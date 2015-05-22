@@ -47,7 +47,8 @@
 
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
-            android:taskAffinity="">
+            android:taskAffinity=""
+            android:isThemeable="true">
 
         <!-- Settings -->
 
